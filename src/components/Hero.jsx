@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="hero-content">
           <p className="greeting">Ciao, sono</p>
           <h1 className="name">Yazan Daseqi</h1>
-          <h2 className="title">Ingegnere Informatico</h2>
+          <h2 className="title">Dottore in Ingegneria Informatica</h2>
           <p className="description">
             Neolaureato in Ingegneria Informatica. Appassionato di sviluppo software, problem solving e innovazione tecnologica. Trasformo idee complesse in soluzioni digitali eleganti.
           </p>
