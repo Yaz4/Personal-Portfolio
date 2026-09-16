@@ -43,8 +43,14 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="project-links">
-                  <a href={project.github} className="btn-link">GitHub ↗</a>
-                  {project.link !== "#" && <a href={project.link} className="btn-link">Live Demo ↗</a>}
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-link" aria-label={`Codice sorgente di ${project.title} su GitHub (si apre in una nuova scheda)`}>
+                    GitHub ↗
+                  </a>
+                  {project.link !== "#" && (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn-link" aria-label={`Demo live di ${project.title} (si apre in una nuova scheda)`}>
+                      Live Demo ↗
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

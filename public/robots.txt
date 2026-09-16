@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yaz4.github.io/Personal-Portfolio/sitemap.xml

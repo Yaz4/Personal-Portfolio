@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import PrivacyModal from './components/PrivacyModal';
 
 function App() {
+  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
+
   return (
     <>
       <Navbar />
@@ -21,13 +24,15 @@ function App() {
         <p>&copy; {new Date().getFullYear()} Yazan Daseqi. Tutti i diritti riservati.</p>
         <p style={{ fontSize: '0.85rem' }}>
           <button 
-            onClick={() => alert("Privacy & Cookie Policy\n\nQuesto sito web funge da portfolio personale statico. Non utilizza cookie di tracciamento o profilazione, né raccoglie dati personali. I contatti avvengono tramite client di posta esterno (mailto).")} 
+            onClick={() => setIsPrivacyOpen(true)} 
             style={{ background: 'none', border: 'none', color: 'var(--accent-cyan)', cursor: 'pointer', textDecoration: 'underline' }}
+            aria-label="Apri Informativa Privacy e Cookie"
           >
             Privacy & Cookie Policy
           </button>
         </p>
       </footer>
+      <PrivacyModal isOpen={isPrivacyOpen} onClose={() => setIsPrivacyOpen(false)} />
     </>
   );
 }

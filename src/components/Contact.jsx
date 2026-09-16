@@ -14,14 +14,14 @@ const Contact = () => {
           </p>
           
           <div className="contact-actions">
-            <a href="mailto:yazan.daseqi04@gmail.com" className="btn btn-primary btn-lg">
+            <a href="mailto:yazan.daseqi04@gmail.com" className="btn btn-primary btn-lg" aria-label="Invia un'email a Yazan Daseqi">
               Scrivimi un'Email
             </a>
           </div>
           
           <div className="social-links">
-            <a href="https://www.linkedin.com/in/yazan-daseqi-148b41242/" target="_blank" rel="noreferrer" className="social-link">LinkedIn</a>
-            <a href="https://github.com/Yaz4" target="_blank" rel="noreferrer" className="social-link">GitHub</a>
+            <a href="https://www.linkedin.com/in/yazan-daseqi-148b41242/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Profilo LinkedIn di Yazan Daseqi (si apre in una nuova scheda)">LinkedIn</a>
+            <a href="https://github.com/Yaz4" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Profilo GitHub di Yazan Daseqi (si apre in una nuova scheda)">GitHub</a>
           </div>
         </div>
       </div>
