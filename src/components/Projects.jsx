@@ -23,6 +23,12 @@ const Projects = () => {
       tech: ["React", "Vite", "CSS"],
       link: "#",
       github: "https://github.com/Yaz4/Personal-Portfolio.git"
+    },
+    {
+      title: "Manuelito IFBB - Sito Web per un Atleta Professionista",
+      description: "Sito web personale sviluppato per atleta IFBB",
+      tech: ["HTML", "CSS",],
+      link: "https://www.manuelitoifbb.it"
     }
   ];
 
